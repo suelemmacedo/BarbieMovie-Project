@@ -5,9 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Barbie Movie</title>
   <link rel="stylesheet" href="style.css">
-  <script src="main.js" defer></script> <!-- "Defer" utilizado para que o arquivo js só carregue depois que toda página ja tiver sido carregada. Caso não, podemos utilizar o script logo após o body -->
+  <script src="main.js" defer></script> <!-- "Defer" utilizado para que o arquivo js só carregue depois que toda página 
+    ja tiver sido carregada. Caso não, podemos utilizar o script logo após o body -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-png"> <!-- Ícone do title da page -->
 </head>
 <body>
+  <div class="container">
+    <header>
+      <span>Margot Robbie</span>
+      <span>Ryan Gosling</span>
+    </header>
+    <section class="phrase">
+      <h2>Ela é tudo.</h2>
+      <h2>Ele é só o Ken.</h2>
+    </section>
+    <section class="info">
+      <div class="cine">
+        <p>20 de Julho</p>
+        <p>Somente nos cinemas</p>
+      </div>
+      <div class="social">
+        <i class="ph-duotone ph-tiktok-logo"></i>
+        <i class="ph-duotone ph-twitter-logo"></i>
+        <i class="ph-duotone ph-instagram-logo"></i>
+        <i class="ph-duotone ph-facebook-logo"></i>
+      </div>
+    </section>
+    <section class="buttons">
+      <button>
+        <a href="https://google.com/search?q=barbie" target="_blank">Compre seu ingresso</a>
+        <a href="#" target="_blank" id="modalContainer">Assista ao trailer</a>
+      </button>
+    </section>
+    <div id="modalContainer">
+      <iframe width="1280" height=720" src="https://www.youtube.com/embed/OCaRcYfy3m8?controls=0" allowfullscreen></iframe>
+    </div>
+    <footer>
+      <i class="ph-duotone ph-speaker-high"></i>
+      <i class="ph-duotone ph-speaker-simple-slash"></i>
+      <img src="./assets/warner-logo.svg" alt="warner">
+      <img src="./assets/scroll.gif" alt="scroll" width="40px" height="40px">
+    </footer>
+  </div>
   
 </body>
 </html>
