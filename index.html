@@ -37,20 +37,20 @@
         <a href="https://google.com/search?q=barbie" target="_blank">Compre seu ingresso</a>
       </button>
       <button>
-        <a href="#">Assista ao trailer</a>
+        <a href="#" id="openModal">Assista ao trailer</a>
       </button>
     </section>
     <div id="modalContainer">
-      <iframe width="1280" height=720" src="https://www.youtube.com/embed/OCaRcYfy3m8?controls=0" allowfullscreen></iframe>
+      <iframe id="youtubeIframe" width="1280" height="720" src="https://www.youtube.com/embed/OCaRcYfy3m8?controls=0" frameborder="0" allowfullscreen></iframe>
     </div>
     <footer>
-      <i class="ph-duotone ph-speaker-high"></i>
-      <i class="ph-duotone ph-speaker-simple-slash"></i>
-      <audio>
+      <i class="ph-duotone ph-speaker-high" onclick="playAudio()"></i>
+      <i class="ph-duotone ph-speaker-simple-slash" onclick="stopAudio()"></i>
+      <audio id="music" loop>
         <source src="audio/barbie.mp3" type="audio/mpeg">
       </audio>
       <img src="./assets/warner-logo.svg" alt="warner">
-      <img src="./assets/scroll.gif" alt="scroll" width="40px" height="40px">
+      <img id="scroll"src="./assets/scroll.gif" alt="scroll" width="40px" height="40px">
     </footer>
   </div>
   
